@@ -7,8 +7,8 @@
     "AutheticateLocal":"http://localhost:5001/authentication",
     "EmployeeGetLocal":"http://localhost:5001/api/employee",
     "EmployeeAddLocal":"http://localhost:5001/api/employee",
-    "baseUrlProd:":"http://mywebapp.somee.com/",
-    "EmployeeGetProd":"http://mywebapp.somee.com/api/employee",
-    "EmployeeAddProd":"http://mywebapp.somee.com/api/employee",
+    "baseUrlProd:":"https://mywebapp.somee.com/",
+    "EmployeeGetProd":"https://mywebapp.somee.com/api/employee",
+    "EmployeeAddProd":"https://mywebapp.somee.com/api/employee",
     "IsProd":true
 }
