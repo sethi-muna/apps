@@ -19,7 +19,7 @@ function Navigation() {
                 </div>
             </div>
             <nav class="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "lightyellow" }}>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <Link id="Link1" class="nav-item nav-link" style={{ borderRadius: "10px" }} to="/EmployeeData" onClick={() => { AlterCss("Link1") }}>ViewEmployeeData</Link>
                         <Link id="Link2" class="nav-item nav-link" style={{ borderRadius: "10px" }} to="/Registration" onClick={() => { AlterCss("Link2") }}>AddEmployee</Link>
