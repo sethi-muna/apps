@@ -10,8 +10,10 @@ export const EmployeeGetCall = (EmpCallback) =>{
         if (document.cookie !== '') {
             token = document.cookie.split('=')[1];
         }
-        if (token !== "" || Urls.IsProd) {
-            fetch(Urls.IsProd?Urls.EmployeeGetProd:Urls.EmployeeGetServer,
+        if (token !== "" || Urls.IsProd || Urls.IsNoAuthOn) {
+            fetch(Urls.IsProd?Urls.EmployeeGetProd:
+                Urls.IsLocal?Urls.EmployeeAddLocal:
+                Urls.EmployeeAddServer,
                 {
                     headers: Urls.IsProd?{}:{
                         'Authorization': 'Bearer ' + token

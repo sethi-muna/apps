@@ -9,8 +9,10 @@ export const AddDataCall = (empObject,EmpCallBack) => {
     if (document.cookie !== '') {
         token = document.cookie.split('=')[1];
     }
-    if (token !== "" || Urls.IsProd) {
-        fetch(Urls.IsProd?Urls.EmployeeGetProd:Urls.EmployeeAddServer, {
+    if (token !== "" || Urls.IsProd || Urls.IsNoAuthOn) {
+        fetch(Urls.IsProd?Urls.EmployeeGetProd:
+                Urls.IsLocal?Urls.EmployeeAddLocal:
+                Urls.EmployeeAddServer, {
             method: "post",
             headers: {
                 //'Accept': 'application/json',

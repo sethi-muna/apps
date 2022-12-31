@@ -7,8 +7,10 @@
     "AutheticateLocal":"http://localhost:5001/authentication",
     "EmployeeGetLocal":"http://localhost:5001/api/employee",
     "EmployeeAddLocal":"http://localhost:5001/api/employee",
-    "baseUrlProd:":"https://mywebapp.somee.com/",
-    "EmployeeGetProd":"https://mywebapp.somee.com/api/employee",
-    "EmployeeAddProd":"https://mywebapp.somee.com/api/employee",
-    "IsProd":true
+    "baseUrlProd:":"https://muna7025.bsite.net/",
+    "EmployeeGetProd":"https://muna7025.bsite.net/api/employee",
+    "EmployeeAddProd":"https://muna7025.bsite.net/api/employee",
+    "IsProd":true,
+    "IsLocal":false,
+    "IsNoAuthOn":false
 }

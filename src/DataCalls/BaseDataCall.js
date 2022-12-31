@@ -10,8 +10,10 @@ export const Autheticate = () => {
         password: "xyz"
     };
 
-    if (document.cookie === '' || !Urls.IsProd) {
-        fetch(Urls.AutheticateServer, {
+    if ((document.cookie === '' || !Urls.IsProd) && !Urls.IsNoAuthOn) {
+        fetch(Urls.IsProd?Urls.EmployeeGetProd:
+            Urls.IsLocal?Urls.EmployeeAddLocal:
+            Urls.EmployeeAddServer, {
             method: "post",
             headers: {
                 'Accept': 'application/json',

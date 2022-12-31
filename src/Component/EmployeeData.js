@@ -52,6 +52,11 @@ function EmployeeData() {
                                             <i class='fa fa-edit' style={{color: "blue"}}></i>
                                         </button>
                                     </td>
+                                    <td>
+                                        <button type="button" className='btn btn-light' data-bs-toggle={modal} data-bs-target="#exampleModal" >
+                                            <i class='fa fa-delete' style={{color: "blue"}}></i>
+                                        </button>
+                                    </td>
                                 </tr>)
                             })
                             : <>
